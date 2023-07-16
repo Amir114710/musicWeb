@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>استاد مسعود رجبی</title>
+    <link rel="stylesheet" href="{% static "css/style.CSS" %}">
+</head>
+<body class="y1">\
+    <img class="i1"src="img/i1.jpg">
+    <h2 class="h">خواننده<br> نسل جوان <br>مسعود رجبی</h2>
+    
+    <img class="ia" src="img/images.png" alt="">
+    <br>
+    <br>
+    <div class="d2">
+            <br/>
+            <br/>
+            <div class="box1">
+                <h2 class="m3">..عاشق کش دیوونه..</h2>
+                <audio controls>
+                    <source src="music/AUD1.mp3" type="audio/mpeg">
+                </audio>
+                <br>
+                <video class="v1" autoplay muted>
+                    <source src="v1.mp4" type="video/mp4">
+                    <source src="v1.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+                <br>
+                <br>
+                 <a class="a1"href="music/AUD1.mp3" download>download</a>
+                <br>
+            <br/>
+        </div>
+        <br>
+        <br>
+        <div class="box1">
+                <h2 class="m3"> <<..ملکه عذابم..>> </h2>
+             <audio controls>
+                   <source src="music/AUD2.mp3" type="audio/mpeg">
+            </audio> 
+            <br>
+            <video class="v1" autoplay muted>
+                <source src="v1.mp4" type="video/mp4">
+                <source src="v1.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+            <br>
+            <br>
+            <a class="a1"href="music/AUD2.mp3" download>download</a>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+        <div class="box1">
+            <h2 class="m3"> <<....>> </h2>
+         <audio controls>
+               <source src="" type="audio/mpeg">
+        </audio> 
+        <br>
+        <video class="v1" autoplay muted>
+            <source src="v1.mp4" type="video/mp4">
+            <source src="v1.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        <br>
+        <a class="a1"href="" download>download</a>
+        <br>
+        <br>
+    </div>
+    <br>
+    <br>
+    <div class="box1">
+        <h2 class="m3"> <<....>> </h2>
+     <audio controls>
+           <source src="" type="audio/mpeg">
+    </audio> 
+    <br>
+    <video class="v1" autoplay muted>
+        <source src="v1.mp4" type="video/mp4">
+        <source src="v1.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+    <br>
+    <br>
+    <a class="a1"href="" download>download</a>
+    <br>
+    <br>
+</div>
+<br>
+<br>
+<div class="box1">
+    <h2 class="m3"> <<....>> </h2>
+ <audio controls>
+       <source src="" type="audio/mpeg">
+</audio> 
+<br>
+<video class="v1" autoplay muted>
+    <source src="v1.mp4" type="video/mp4">
+    <source src="v1.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+</video>
+<br>
+<br>
+<a class="a1"href="" download>download</a>
+<br>
+<br>
+</div>
+<br>
+<br>
+<div class="box1">
+    <h2 class="m3"> <<....>> </h2>
+        <audio controls>
+            <source src="" type="audio/mpeg">
+        </audio> 
+        <br>
+        <video class="v1" autoplay muted>
+            <source src="v1.mp4" type="video/mp4">
+            <source src="v1.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        <br>
+            <a class="a1"href="" download>download</a>
+        <br>
+        <br>
+        </div>
+    </div> 
+    <br>
+    <div class="but">
+        <button class="ba1" type="button">{% if request.user.is_authenticated %}<a class="ba" href="{% url 'account:logout' %}">logout</a>{% else %}<a class="ba" href="{% url 'account:login' %}">login</a>{% endif %}</button>
+        <button class="ba1" type="button"><a class="ba" href="tamas.html">تماس با ما</a></button>
+    </div>
+</body>
+</html>
